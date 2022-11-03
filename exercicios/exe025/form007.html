@@ -7,6 +7,37 @@
     <title>Document</title>
 </head>
 <body>
-    <h1></h1>
+    <h1>Exemplo de Formulário com Select, Datalist e Textarea</h1>
+    <form action="cadsatro.php" method="post">
+        <div>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <option value="" selected>---Selecione uma opção</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="listaprof">
+            <datalist id="listaprof">
+                <optgroup label="Profissões">
+                    <option>Administrador</option>
+                    <option>Contabilista</option>
+                </optgroup>
+            </datalist>
+        </div>
+        <div>
+            <label for="imsg">Mensagem:</label>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+
 </body>
 </html>
