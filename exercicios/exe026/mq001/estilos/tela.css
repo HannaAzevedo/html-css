@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/*Estilo para telas*/
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+}
+header > h1 {
+    text-align: center;
+}
+menu ul {
+    list-style-type: none;
+    background-color: aqua;
+}
+menu li {
+    background-color: darkseagreen;
+    color: aliceblue;
+    display: inline-block;
+    padding: 10px;
+}
+article {
+    width: 600px;
+    display: block;
+    margin: auto;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Site - Media Queries</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/impressora.css" media="print">
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/tablet.css" media="screen">
+    <link rel="stylesheet" href="estilos/desktop.css" media="screen">
+    <link rel="stylesheet" href="estilos/telas-grandes.css" media="screen">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer" class="material-symbols-rounded" onclick="clickMenu()">menu</span>
+        <menu id="opcoes">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2><br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta incidunt doloremque ab quam obcaecati placeat quo minima dolores! Fugit molestiae odio velit eum excepturi quis sequi expedita laudantium consectetur animi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi voluptatum sapiente, ducimus ab nulla aspernatur soluta praesentium ipsam, aliquam, temporibus necessitatibus debitis incidunt hic nesciunt. Illo assumenda id eligendi doloribus.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam obcaecati, itaque expedita quam, eaque commodi consequatur ab atque voluptatibus laudantium porro asperiores. Numquam beatae voluptas fuga facilis. Temporibus, sunt animi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptatem non beatae. Natus quia aut atque ex, blanditiis obcaecati, repellendus eum quidem perspiciatis excepturi placeat? Consequuntur et provident illum quam.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, assumenda consequatur culpa corporis commodi aut nostrum minima libero ut sint? Fugit odit excepturi animi ipsam quidem eos mollitia perspiciatis laboriosam!Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, ipsa error nemo iusto excepturi possimus nisi natus amet mollitia deleniti impedit aperiam porro ducimus perspiciatis numquam optio dolorem fugiat odit?.</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+                if (opcoes.style.display == 'block') {
+                    opcoes.style.display = 'none'
+                }
+                else {
+                    opcoes.style.display = "block"
+                }
+        }
+    </script>
+</body>
+</html>
