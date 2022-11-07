@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="estilos/desktop.css" media="screen">
     <link rel="stylesheet" href="estilos/telas-grandes.css" media="screen">
 </head>
-<body>
+<body onresize="tamanhoTela()" >
     <header>
         <h1>Meu Site</h1>
         <span id="burguer" class="material-symbols-rounded" onclick="clickMenu()">menu</span>
@@ -36,6 +36,17 @@
         </article>
     </main>
     <script>
+        function tamanhoTela() {
+            if(window.innerWidth >= 768) {
+                opcoes.style.display = 'block'
+            }
+            else {
+                opcoes.style.display = 'none'
+            }
+        }
+
+
+
         function clickMenu() {
                 if (opcoes.style.display == 'block') {
                     opcoes.style.display = 'none'

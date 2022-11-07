@@ -1,4 +1,23 @@
 @charset "UTF-8";
 @media screen and (min-width: 769px) and (max-width: 992px) {
     /*Tablet*/
+
+    span#burguer {
+        display: none;
+    }
+
+    menu#opcoes {
+        display: block;
+    }
+    
+    menu > ul > li {
+    
+        display: inline-block;
+        margin: auto
+    }
+    
+    main {
+        width: 700px;
+    }
+
 }
